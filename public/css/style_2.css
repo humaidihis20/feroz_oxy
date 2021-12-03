@@ -1,0 +1,21 @@
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid #b0bec5 !important;
+}
+
+.iframe-container {
+    padding-bottom: 60%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+}

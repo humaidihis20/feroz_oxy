@@ -1,0 +1,728 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+    --main-color: #48deff;
+    --color-dark: #1d2231;
+    --text-grey: #8390a2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+div .content-testimoni {
+    background-color: var(--main-color);
+    border-radius: 15px;
+    height: 300px;
+    line-height: 37px;
+    box-sizing: border-box;
+}
+
+div .card-img {
+    height: 420px;
+}
+
+.testimoni_gambars {
+    background-image: url(../images/image_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+    margin-top: 22px;
+    margin-left: -30px;
+}
+
+@media (max-width: 992px) {
+    .content-testimoni .card-body p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-testimoni .card-body p {
+        font-size: 15px;
+    }
+
+    .testimoni_gambars {
+        margin: 0 auto;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimoni_gambars {
+        margin: 0 auto;
+        margin-top: -10px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 430px) {
+    .content-testimoni .card-body p {
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 396px) {
+    .testimoni_gambars {
+        margin: 0 auto;
+        margin-top: -10px;
+        width: 250px;
+        overflow-x: hidden;
+    }
+}
+
+.card-testimoni {
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.testi-input textarea {
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .testi-input textarea {
+        margin-top: 10px;
+    }
+}
+
+.testi-inputs {
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    background-color: #fff;
+    color: var(--main-color);
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.testi-inputs:hover {
+    color: #48deff;
+    background-color: var(--text-grey);
+}
+
+/* Spinning loading */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font: 14px arial;
+}
+
+/* Info-panel */
+.info-panel {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background-color: white;
+    margin-top: -70px;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.info-panel:hover {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
+}
+
+.info-panel img {
+    width: 60px;
+    height: 60px;
+    margin-right: 60px;
+}
+
+.info-panel h5 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p {
+    font-size: 15px;
+    color: #acacac;
+    font-weight: 200;
+}
+
+.groups input {
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #00000020;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+}
+
+/* pesanan air */
+.head-air-minum {
+    margin-top: 20px;
+}
+
+.head-air-minum h4 {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+div .background-pesanair {
+    width: 100%;
+    height: 472px;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    border-style: none;
+    margin-top: 30px;
+}
+
+div .head-pesanan {
+    margin-top: -400px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+div .background_konfirmasi {
+    width: 100%;
+    height: 472px;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    border-style: none;
+    margin-top: 30px;
+}
+
+/* Konfirmasi Pembayaran */
+div .card_konfirmasi {
+    margin-top: -400px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    /* width: 80%; */
+}
+
+div .card_konfirmasi_1 {
+    margin-top: -400px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+div .card_detail {
+    margin-top: 40px;
+    background-color: #fafafa;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+div .card_detail_1 {
+    margin-top: 40px;
+    background-color: #fafafa;
+    border-radius: 15px;
+    box-shadow: 2px solid rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+div .edit-data-pembayaran {
+    margin-top: -10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--main-color);
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    padding: 12px;
+    margin-left: 73%;
+}
+
+div .note_pesanan {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+div .edit-data-pembayaran:hover {
+    background-color: var(--text-grey);
+}
+
+.pembayaran h4 {
+    color: var(--main-color);
+    font-weight: 400;
+}
+
+.pembayaran p {
+    color: #acacac;
+}
+
+div .dana_title ul li {
+    margin-left: 75px;
+    font-weight: 500;
+}
+
+div .bank_bni_title ul li {
+    margin-left: 75px;
+    font-weight: 500;
+}
+
+.konfirmasis div .btn_konfirmasi_pembayaran {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 90%;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    padding: 12px;
+}
+
+.konfirmasis div .btn_batal_pembayaran {
+    /* margin-top: 10px; */
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #acacac;
+    color: #fff;
+    font-size: 90%;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    transition: 0.5s;
+    padding: 12px;
+}
+
+.konfirmasis div .btn_konfirmasi_pembayaran:hover {
+    color: black;
+}
+
+.konfirmasis div .btn_batal_pembayaran:hover {
+    color: black;
+}
+
+.total_pembayaran_border {
+    position: relative;
+    top: -60px;
+}
+
+.note_detail {
+    margin-top: -10px;
+}
+
+a.kembali {
+    border-radius: 13px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    background: var(--main-color);
+    padding: 9px;
+    font-weight: 500;
+}
+
+a.kembali:hover {
+    background-color: var(--text-grey);
+}
+
+button.print {
+    border: none;
+    border-radius: 13px;
+    padding: 9px 15px;
+    letter-spacing: 0.1rem;
+    background: var(--main-color);
+    color: #fff;
+    font-weight: 500;
+}
+
+button.print:hover {
+    background-color: var(--text-grey);
+    border: none;
+}
+
+@media print {
+    .btn-group {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    div .card_konfirmasi_1 {
+        margin-top: 8px;
+    }
+}
+
+.head-konfirmasi h3 {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.head-konfirmasi p {
+    color: #acacac;
+}
+
+div table tr .nama {
+    color: #acacac;
+}
+
+div table tr .email {
+    color: #acacac;
+}
+
+div table tr .nomer {
+    color: #acacac;
+}
+
+div table tr .jumlah_pesanans {
+    color: #acacac;
+}
+
+div table tr .tanggal_pesanan {
+    color: #acacac;
+}
+
+div table tr .alamat_lengkaps {
+    color: #acacac;
+}
+
+div table tr .jml {
+    color: #acacac;
+}
+div table tr .galon_air {
+    color: #acacac;
+}
+div table tr .biaya_pengantar {
+    color: #acacac;
+}
+div table tr .total_pmbyrn {
+    color: #acacac;
+}
+
+.checkout button {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 90%;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    padding: 12px;
+}
+
+.checkout a {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 90%;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    padding: 12px;
+}
+
+.checkout a:hover {
+    background-color: var(--text-grey);
+}
+
+.checkout button:hover {
+    background-color: var(--text-grey);
+}
+
+/* Profile User */
+.background-profile {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 600px;
+}
+
+div .data_profile {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+td .edit-data-profile {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 90%;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    padding: 12px;
+}
+
+td .edit-data-profile:hover {
+    background-color: var(--text-grey);
+}
+
+div .usersgambar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    position: relative;
+}
+
+.form-input input {
+    width: 100%;
+    height: 45px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #00000020;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+}
+
+.form-input span {
+    position: absolute;
+    top: 10px;
+    padding-left: 15px;
+    color: #007bff;
+}
+
+.form-input input::placeholder {
+    color: black;
+    padding-left: 0px;
+}
+
+.form-input input:focus::placeholder {
+    color: #454b69;
+}
+
+.form-input textarea {
+    width: 100%;
+    height: 45px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #00000020;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+}
+
+.form-input textarea::placeholder {
+    color: black;
+    padding-left: 0px;
+}
+
+.form-input textarea:focus,
+.form-input textarea:valid {
+    border: 2px solid #007bff;
+}
+
+.form-input textarea:focus::placeholder {
+    color: #454b69;
+}
+
+div .edit-data-profile {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    padding: 12px 40px;
+    float: right;
+}
+
+div .cards-edit {
+    background-color: var(--main-color);
+    border-radius: 15px;
+    width: 100%;
+    height: 500px;
+}
+
+form .data_edituser {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form a.edit_profile {
+    /* border: none; */
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    transition: 1s;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form a.edit_profile:hover {
+    background-color: #8390a2;
+}
+
+.btn-logins {
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    padding: 0px 30px;
+}
+
+.btn-logins:hover {
+    background-color: #8390a2;
+}
+
+@media (max-width: 992px) {
+    .abouts > * {
+        font-size: 15px;
+    }
+
+    .contents {
+        grid-area: about;
+        background-color: var(--main-color);
+        color: #fff;
+        border-radius: 20px;
+        /* padding: 0px 120px; */
+        min-width: 300px;
+        /* min-height: 300px; */
+        display: flex;
+        align-items: center;
+    }
+
+    .gambar_profile {
+        grid-area: gambar;
+        background-image: url("../images/image_3.jpg");
+        min-width: 200px;
+        position: relative;
+        margin-top: 20px;
+        margin-left: -30px;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .feroz {
+        color: var(--main-color);
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 769px) {
+    .header {
+        grid-template-areas:
+            "hero"
+            "about"
+            "gambar";
+    }
+
+    .gambar_profile {
+        grid-area: gambar;
+        background-image: url("../images/image_3.jpg");
+        min-width: 200px;
+        position: relative;
+        margin-top: -10px;
+        margin-left: -1px;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .feroz {
+        color: var(--main-color);
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 494px) {
+    .contents > * {
+        grid-area: about;
+        background-color: var(--main-color);
+        color: #fff;
+        border-radius: 20px;
+        padding: 0px 0px;
+        align-items: center;
+    }
+
+    .abouts > * {
+        font-size: 13px;
+    }
+
+    .feroz {
+        color: var(--main-color);
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
